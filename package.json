@@ -1,0 +1,25 @@
+{
+  "name": "portofolio-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sara-elhawary/portofolio-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sara-elhawary/portofolio-2021/issues"
+  },
+  "homepage": "https://github.com/sara-elhawary/portofolio-2021#readme"
+}
