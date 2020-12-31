@@ -101,12 +101,16 @@ section {
     transform: translateY(-15px);
   }
 }
+.hidden {
+  display: none;
+}
+.border {
+  border: red solid 1px;
+}
 
 /************************SKILLS*****************************/
 /***********************************************************/
-.skills {
-  /* margin: 300px 0 500px; */
-}
+
 .skills-list {
   margin: 0 auto;
   list-style-type: none;
@@ -201,5 +205,8 @@ section {
   }
 }
 
-/* 1-projects section especially project 1 in smaller screens
-2-nav link to be active when at targeted section  ///SOLVED  */
+/* 1-projects section especially project 1 in smaller screens.
+2-nav link to be active when at targeted section.                          ///SOLVED  
+3-when reach contact section remove down arrow and make an up arrow.
+4-contact headers are not well aligned from the start.
+*/

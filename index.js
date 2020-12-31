@@ -17,4 +17,20 @@ function activeLinkFunction() {
   })
 }
 
-activeLinkFunction()
+function hideDownArrow() {
+  const downArrow = document.querySelector('.arrow')
+  console.log(downArrow)
+  const contactSection = document.getElementById('contact')
+  const activeFlag = contactSection.classList.contains('active')
+  if (activeFlag) {
+    downArrow.classList.add('hidden')
+    downArrow.classList.add('border')
+    console.log(downArrow)
+  }
+}
+
+function main() {
+  activeLinkFunction()
+  hideDownArrow()
+}
+main()
