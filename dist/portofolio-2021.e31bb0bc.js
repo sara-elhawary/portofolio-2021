@@ -118,28 +118,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-console.log('hello first');
-
-function activeLinkFunction() {
-  console.log('hello');
-  var navLinks = document.querySelectorAll('.nav__link');
-  navLinks.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      var activeLink = document.querySelector('.nav__link.active');
-
-      if (activeLink) {
-        activeLink.classList.remove('active');
-      }
-
-      var currentLink = event.target;
-      console.log(currentLink);
-      currentLink.classList.add('active');
-      console.log(navLinks);
-    });
-  });
-}
-
-activeLinkFunction();
+// console.log('hello first')
+// function activeLinkFunction() {
+//   console.log('hello')
+//   const navLinks = document.querySelectorAll('.nav__link')
+//   navLinks.forEach((link) => {
+//     link.addEventListener('click', (event) => {
+//       const activeLink = document.querySelector('.nav__link.active')
+//       if (activeLink) {
+//         activeLink.classList.remove('active')
+//       }
+//       const currentLink = event.target
+//       console.log(currentLink)
+//       currentLink.classList.add('active')
+//       console.log(navLinks)
+//     })
+//   })
+// }
+// activeLinkFunction()
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
