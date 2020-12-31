@@ -161,7 +161,7 @@ section {
 .contact i {
   font-weight: 450;
   font-size: 20px;
-  color: white;
+  color: #3aafa9;
 }
 
 /************************MEDIA QUERIES*****************************/
@@ -202,4 +202,4 @@ section {
 }
 
 /* 1-projects section especially project 1 in smaller screens
-2-nav link to be active when at targeted section */
+2-nav link to be active when at targeted section  ///SOLVED  */
