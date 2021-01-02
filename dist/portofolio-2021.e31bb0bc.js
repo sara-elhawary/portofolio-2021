@@ -118,10 +118,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-console.log('hello first');
+console.log('hello first'); //Down arrow function
+
+var arrowSpan = document.getElementById('arrow-span');
+arrowSpan.addEventListener('click', goDown);
+
+function goDown() {
+  var sections = document.querySelectorAll('section');
+  console.log(sections[0]);
+}
 
 function activeLinkFunction() {
-  console.log('hello');
+  // console.log('hello')
   var navLinks = document.querySelectorAll('.nav__link');
   navLinks.forEach(function (link) {
     link.addEventListener('click', function (event) {
@@ -140,15 +148,13 @@ function activeLinkFunction() {
 }
 
 function hideDownArrow() {
-  var downArrow = document.querySelector('.arrow');
-  console.log(downArrow);
+  var arrowSpan = document.getElementById('arrow-span');
   var contactSection = document.getElementById('contact');
   var activeFlag = contactSection.classList.contains('active');
 
   if (activeFlag) {
-    downArrow.classList.add('hidden');
-    downArrow.classList.add('border');
-    console.log(downArrow);
+    arrowSpan.classList.add('hidden');
+    console.log(arrowSpan); // console.log(downArrow)
   }
 }
 
@@ -186,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38041" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38953" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

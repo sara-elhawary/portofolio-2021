@@ -1,7 +1,14 @@
 console.log('hello first')
+//Down arrow function
+const arrowSpan = document.getElementById('arrow-span')
+arrowSpan.addEventListener('click', goDown)
+function goDown() {
+  const sections = document.querySelectorAll('section')
+  console.log(sections[0])
+}
 
 function activeLinkFunction() {
-  console.log('hello')
+  // console.log('hello')
   const navLinks = document.querySelectorAll('.nav__link')
   navLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
@@ -18,14 +25,14 @@ function activeLinkFunction() {
 }
 
 function hideDownArrow() {
-  const downArrow = document.querySelector('.arrow')
-  console.log(downArrow)
+  const arrowSpan = document.getElementById('arrow-span')
+
   const contactSection = document.getElementById('contact')
   const activeFlag = contactSection.classList.contains('active')
   if (activeFlag) {
-    downArrow.classList.add('hidden')
-    downArrow.classList.add('border')
-    console.log(downArrow)
+    arrowSpan.classList.add('hidden')
+    console.log(arrowSpan)
+    // console.log(downArrow)
   }
 }
 
